@@ -58,6 +58,10 @@ main h3 {
     line-height: 37px;
 }
 
+main h3.news-header {
+    font-size: 54px;
+}
+
 main p a,
 main h1 a,
 main h2 a,
@@ -96,4 +100,8 @@ main h4 a {
     border-radius: 6px;
     background-color: #a51417;
     text-align: center;
+}
+
+.featured-header {
+    font-size: 54px;
 }

@@ -8,6 +8,19 @@ import { Slideshow } from './slideshow';
 export function PutStudentPageLoadOperationsInsideThisStudentBody() {
     // TODO: Put all operations that you want to happen on ever page load in this function.
     // For example you could write: Sticky.setup()
+    const nav = document.querySelector('.navbar') as HTMLElement | null;
+    if (!nav) return;
+
+    const stickyY = nav.offsetTop;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > stickyY) {
+            nav.classList.add('sticky');
+        } else {
+            nav.classList.remove('sticky');
+        }
+    });
+
     doSomething();
 }
 
